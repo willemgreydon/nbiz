@@ -1,0 +1,38 @@
+{
+  "name": "forge-website-prototyp",
+  "version": "0.0.0",
+  "dependencies": {
+    "gmaps": "~0.4.5",
+    "parallax": "*",
+    "sass-bootstrap-glyphicons": "~1.0.0",
+    "pace": "~0.4.11",
+    "foundation-icons": "*",
+    "wysihtml5": "~0.3.0",
+    "angular-resource": "~1.0.8",
+    "angular-cookies": "~1.0.8",
+    "angular": "~1.0.8",
+    "jquery": "~2.0.3",
+    "zepto": "~1.0.0",
+    "angular-sanitize": "~1.0.8",
+    "modernizr": "~2.6.2",
+    "gridster": "~0.2.1",
+    "socket.io-client": "~0.9.16",
+    "angular-local-storage": "*",
+    "picturefill": "~1.2.1",
+    "cupcake": "~1.2.3",
+    "angularjs-geolocation": "~0.1.0",
+    "dropzone": "~3.7.3",
+    "angular-ui": "~0.4.0",
+    "angular-ui-router": "~0.2.0",
+    "respond": "~1.4.2",
+    "yepnope": "~1.5.4",
+    "foundation": "~5.0.3",
+    "angular-bootstrap": "~0.10.0",
+    "bootstrap-sass": "~3.0.2",
+    "angular-ui-bootstrap": "~0.10.0"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": ">= 2.0.0"
+  }
+}

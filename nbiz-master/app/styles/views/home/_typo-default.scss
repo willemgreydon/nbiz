@@ -1,0 +1,197 @@
+.content {
+  word-wrap: break-word;
+}
+.alerts {
+  .alert-box {
+    color: $color-3;
+  }
+}
+.header {
+  line-height: $header-height*$small-header-factor;
+  .navigation-item {
+    color: $color-1;
+    line-height: $header-height*$small-header-factor;
+  }
+  .main-navigation {
+    .navigation-item { 
+      &.active,
+      &:active {
+        color: $color-10;
+      }
+    }
+  }
+}
+// header
+.post-sujet {
+  color: $color-1;
+  h1{
+    display: inline;
+    line-height: 32px;
+    font-size: emCalc( 24px );    
+  }  
+  a, span {
+    font-size: emCalc( 20px );
+    color: $color-1;
+  }
+  .foundicon-github {
+    font-size: 44px;
+  }
+  .github-commit {
+    a{
+      font-weight: 700;
+      &:hover {
+        color: $color-9;
+      }
+      &.active,
+      &:active {
+        color: $color-10;
+      }
+    }
+  }
+}
+.main {
+  h1, h2, h3, h4, h5 {
+    color: $color-7;
+    text-align: center;
+    font-weight: 300;
+    }
+  .about-us {
+    h1 {
+      font-size: emCalc( 30px );
+      line-height: 37px;
+    }
+    h2 {
+      font-size: emCalc( 18px );
+    }
+    .reading {
+      font-size: emCalc( 18px );
+      color: $color-3;
+    }
+    .about-us-list {
+        li {
+          a {
+              text-align: center;
+              span {
+                color: $color-7;
+                font-size: emCalc( 20px );
+                font-weight: 200;
+                line-height: emCalc( 28px );
+              }
+          }
+          .link {
+            text-align: center;
+            font-weight: 600;
+            &:hover {
+              color: $color-4;
+            }
+          }
+        }
+    }
+  }
+  .contact {
+    h1 {
+      font-size: emCalc( 48px );
+      line-height: 51px;
+    }
+    h2 {
+      font-size: emCalc( 24px );
+    }
+    .reading {
+      font-size: emCalc( 18px );
+      color: $color-3;
+    }
+    .about-us-list {
+        li {
+          a {
+              text-align: center;
+              span {
+                color: $color-7;
+                font-size: emCalc( 20px );
+                font-weight: 200;
+                line-height: emCalc( 28px );
+              }
+          }
+          .link {
+            text-align: center;
+            font-weight: 600;
+            &:hover {
+              color: $color-4;
+            }
+          }
+        }
+    }
+  }
+  .references {
+        h3 {
+          color: #fff;
+          font-size: emCalc( 24px );
+          font-weight: 400;
+        }
+    }
+}
+.pre-footer{
+  a {
+    color: $color-1;
+    &:hover {
+      color: $color-9;
+    }
+    &.active,
+    &:active {
+      color: $color-10;
+    }
+  }
+  h1 {
+    font-size: emCalc( 20px );
+    font-weight: 400;
+  }
+  h2 {
+    font-size: emCalc( 16px );
+    font-weight: 300;
+  }
+  h3 {
+    font-size: emCalc( 16px );
+    font-weight: 700;
+    a{
+      line-height: 40px;
+    }
+  }
+  label {
+    color: $color-1;
+      font-size: emCalc( 16px );
+  }
+}
+// pre-footer
+.footer {
+    h1, h2{
+      color: $color-5;
+    }
+    h1{
+      font-size: emCalc( 24px );
+    }
+    h2{
+      font-size: emCalc( 18px );
+    }
+    span{
+      font-size: emCalc( 14px );
+    }
+}
+// footer
+.post-footer {
+  &.user-authorized
+  , &.admin-authorized {
+    .copyright {
+      text-align: justify;
+      a {
+        color: $color-8;
+        &:hover {
+          color: $color-1;
+        }
+        &:active {
+          color: $color-4;
+        }
+      }
+    }
+  }
+  // user-authorized, admin-authorized
+}
+// post-footer

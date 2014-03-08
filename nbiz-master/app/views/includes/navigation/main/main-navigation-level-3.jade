@@ -1,0 +1,7 @@
+li.level-3( data-ng-repeat="navigationItem3 in navigationItem2.subNavigation"
+, data-ng-switch="navigationItem3.subNavigation"
+, class="{{ navigationItem3.classes }}" )
+  a( class="navigation-item"
+  , target="{{ navigationItem.target }}" 
+  , data-ng-bind-html-unsafe="navigationItem3.content" 
+  , href="{{ navigationItem3.path }}" )

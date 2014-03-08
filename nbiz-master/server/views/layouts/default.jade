@@ -1,0 +1,44 @@
+!!! 5
+html( lang='en'
+  , xmlns='http://www.w3.org/1999/xhtml'
+  , xmlns:fb='https://www.facebook.com/2008/fbml'
+  , itemscope='itemscope'
+  , itemtype='http://schema.org/Product' 
+  , data-ng-controller="ApplicationCtrl"
+  )
+  include ./../includes/head
+  body()
+    //- Add no Javascript- and "IE6 outdated browser"-warning 
+    section( class="alerts" )
+      .content
+        include ./../includes/templates/warnings
+    if user.groups
+      //- The first elment in groups-array is meant to be highest
+      //- application authorization-group
+      case user.groups[ 0 ]
+        when "user-authorized"
+          include ./../includes/templates/header/user-authorized
+        when "admin-authorized"
+          include ./../includes/templates/header/admin-authorized
+        default
+          include ./../includes/templates/header/default
+    else
+      include ./../includes/templates/header/default 
+      
+    block content
+
+    if user.groups
+      //- The first elment in groups-array is meant to be highest
+      //- application authorization-group
+      case user.groups[ 0 ]
+        when "user-authorized"
+          include ./../includes/templates/footer/user-authorized
+        when "admin-authorized"
+          include ./../includes/templates/footer/admin-authorized
+        default
+          include ./../includes/templates/footer/default
+    else
+      include ./../includes/templates/footer/default
+
+    include ./../../../app/views/includes/modals/signin
+    include ./../includes/foot

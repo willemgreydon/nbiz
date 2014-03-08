@@ -1,0 +1,61 @@
+// Import compass-mixings
+@import "compass/css3";
+@import "compass/typography/text/replacement";
+@import "compass/typography/lists/inline-list";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/utilities/general/float";
+@import "compass/utilities/general/clearfix";
+
+// Import foundation custom configuration-file. Use this
+@import "settings";
+// Import styles for angular-forms
+
+// Import/Customize Zurb Foundation
+// http://foundation.zurb.com/docs/ 
+// Comment out this import if you are customizing you imports below
+		// @import "./../../node_modules/foundation/scss/foundation";
+		// Import specific parts of Foundation by commenting the import "foundation"
+		// and uncommenting what you want below. You must uncomment the following if customizing
+		@import "./../../bower_modules/foundation/scss/foundation/components/global"; // ALWAYS REQUIRED
+		@import "./../../bower_modules/foundation/scss/foundation/components/accordion";
+		@import "./../../bower_modules/foundation/scss/foundation/components/alert-boxes";
+		@import "./../../bower_modules/foundation/scss/foundation/components/block-grid";
+		@import "./../../bower_modules/foundation/scss/foundation/components/breadcrumbs";
+		@import "./../../bower_modules/foundation/scss/foundation/components/button-groups";
+		@import "./../../bower_modules/foundation/scss/foundation/components/buttons";
+		@import "./../../bower_modules/foundation/scss/foundation/components/clearing";
+		@import "./../../bower_modules/foundation/scss/foundation/components/dropdown-buttons";
+		@import "./../../bower_modules/foundation/scss/foundation/components/dropdown";
+		@import "./../../bower_modules/foundation/scss/foundation/components/flex-video";
+		@import "./../../bower_modules/foundation/scss/foundation/components/forms";
+		@import "./../../bower_modules/foundation/scss/foundation/components/grid";
+		@import "./../../bower_modules/foundation/scss/foundation/components/inline-lists";
+		@import "./../../bower_modules/foundation/scss/foundation/components/joyride";
+		@import "./../../bower_modules/foundation/scss/foundation/components/keystrokes";
+		@import "./../../bower_modules/foundation/scss/foundation/components/labels";
+		@import "./../../bower_modules/foundation/scss/foundation/components/magellan";
+		@import "./../../bower_modules/foundation/scss/foundation/components/offcanvas";
+		@import "./../../bower_modules/foundation/scss/foundation/components/magellan";
+		@import "./../../bower_modules/foundation/scss/foundation/components/orbit";
+		@import "./../../bower_modules/foundation/scss/foundation/components/pagination";
+		@import "./../../bower_modules/foundation/scss/foundation/components/panels";
+		@import "./../../bower_modules/foundation/scss/foundation/components/pricing-tables";
+		@import "./../../bower_modules/foundation/scss/foundation/components/progress-bars";
+		@import "./../../bower_modules/foundation/scss/foundation/components/reveal";
+		@import "./../../bower_modules/foundation/scss/foundation/components/side-nav";
+		@import "./../../bower_modules/foundation/scss/foundation/components/switch";
+		@import "./../../bower_modules/foundation/scss/foundation/components/tables";
+		@import "./../../bower_modules/foundation/scss/foundation/components/tabs";
+		@import "./../../bower_modules/foundation/scss/foundation/components/thumbs";
+		@import "./../../bower_modules/foundation/scss/foundation/components/tooltips";
+		@import "./../../bower_modules/foundation/scss/foundation/components/top-bar";
+		@import "./../../bower_modules/foundation/scss/foundation/components/type";
+		@import "./../../bower_modules/foundation/scss/foundation/components/visibility";
+
+// Import medium layout
+@import "./includes/parallax/skin-medium";
+@import "./includes/parallax/layout-medium";
+@import "./views/home/layout-medium";
+@import "./views/home/skin-medium";
+@import "./views/home/typo-medium";

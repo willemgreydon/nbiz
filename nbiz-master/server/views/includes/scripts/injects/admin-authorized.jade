@@ -1,0 +1,9 @@
+script.
+  ; console.log( "Added data for user-group: admin-unauthorized" )
+  //- Inject additional application-data for user-group
+  //- "admin-authorized"
+  //- CAUTION: This is essential for security reasons!
+  //- !!! Double check that only application-data for
+  //- user-group "admin-authorized" is injected!
+  ; window.data.route.state.adminAuthorized = !{ JSON.stringify( data.route.adminAuthorized ) }
+  ; window.data.navigation.state.adminAuthorized = !{ JSON.stringify( data.navigation.adminAuthorized ) }

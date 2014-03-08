@@ -1,0 +1,9 @@
+.js{
+  .alerts{
+    .alert-box{
+      &.no-js{
+        display: none;
+      }
+    }
+  }
+}

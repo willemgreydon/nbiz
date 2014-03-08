@@ -1,0 +1,9 @@
+ul( id="main-navigation-1", class="main-navigation" )
+  li.level-0( data-ng-repeat="navigationItem in navigation.state.active.main|orderBy:'sort_id'" )
+    a( data-ng-bind-html-unsafe="navigationItem.content"
+    , target="{{ navigationItem.target }}"
+    , class="navigation-item {{ navigationItem.classes }}"
+    , href="{{ navigationItem.path }}" )
+    span( ng-switch="navigationItem.subnavigation" )
+      ul( ng-switch-default="hasSubNavigation" )
+        include main-navigation-level-1

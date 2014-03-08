@@ -1,0 +1,11 @@
+ul( class="home-navigation", data-ft-linking )
+  li.level-0( data-ng-repeat="navigationItem in navigation.state.active.home|orderBy:'sort_id'" )
+    a( data-ng-bind-html-unsafe="navigationItem.content"
+    , class=" navigation-item {{ navigationItem.classes }}"
+    , target="{{ navigationItem.target }}"
+    , href="{{ navigationItem.path }}" ) 
+  li.level-0.mobile-navigation
+    a.button-container
+    span( class="button", data-fg-mobile-navigation="main-navigation-1" ) 
+      span.mobile-icon 
+        i( class="general fi-list" )

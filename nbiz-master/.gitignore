@@ -1,0 +1,9 @@
+.sass-cache
+.tmp
+ignored
+build
+node_modules
+bower_modules
+npm-debug.log
+package-concept.json
+db/data/stored

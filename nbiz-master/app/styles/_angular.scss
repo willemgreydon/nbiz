@@ -1,0 +1,18 @@
+//- CSS Styles used by angularJs
+//- 
+//- ng-pristine: Added to new input widget element which did not have user interaction
+//- ng-dirty: Added to input widget element which received user input
+//- ng-invalid: Added to input widget element which received invalid user input
+//- ng-valid: Added to input widget element which received valid user input
+.ng-pristane {
+	background-color: $primary-color;
+}
+
+.ng-dirty {
+	&.ng-invalid {
+		background-color: $alert-color;
+	}
+	&.ng-valid {
+		background-color: $success-color;
+	}
+}

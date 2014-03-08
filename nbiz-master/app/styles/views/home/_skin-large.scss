@@ -1,0 +1,14 @@
+@media #{ $medium } { 
+ .header {
+  .home-navigation {
+    border: none;
+  }
+  .spacer {
+      border-bottom: 0;
+      border-right: 1px solid $color-8;
+      width: 1px;
+      height: $header-height;
+      margin: -17px 10px 0 10px;
+    }
+  }
+}

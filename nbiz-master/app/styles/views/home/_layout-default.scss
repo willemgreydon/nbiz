@@ -1,0 +1,358 @@
+// Imports
+// Variables
+$small-header-factor: 0.75;
+$small-outer-spacing: 15px;
+// Element is used as general style
+// for a foundation grid-row used to
+// center the pages content.
+// ONLY COMPONENTS USING FOUNDATION
+// GRID-COLUMN MIXING MUST BE NESTED
+// INSIDE ( or components probably imitating
+// or overriding this styles )! DON'T NEST
+// ANOTHER GRID-ROW FOR NOW!
+// TODO: Find out how to achiev prober
+// nesting behaviour
+.content {
+  @include grid-row();
+}
+.alerts {
+  .alert-box {
+  @include grid-column( 12 );
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+//- .alerts
+.header {
+  // display: none;
+  .home-navigation {
+    @include inline-list();
+    margin: 0;
+    .navigation-item {
+      position: relative;
+      height: 60px;
+      padding: 0 5px;
+    }
+    li {
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      &.navigation-item-0 {
+        width: 10%;
+      }
+      &.navigation-item-1 {
+        width: 20%;
+      }
+      &.mobile-navigation {
+        width: 60px;
+        float: right;
+        .button {
+          width: 60px;
+          @include float-right();
+          position: relative;
+        }
+      }
+    }
+    .logo {
+      width: 40px;
+      img {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        left: 10px;
+      }
+    }
+    .name {
+      width: 176px;
+      img {
+        height: 20px;
+        position: relative;
+        top:2px;
+        left:10px;
+      }
+    }
+  }
+  .main-navigation {
+    background-color: red;
+    list-style-type: none;
+    margin: 0;
+    .navigation-item {
+      display: block;
+      margin: 0 5px;
+      padding: $small-outer-spacing - 10 $small-outer-spacing - 5px;
+    }
+    &.inactive {
+      max-height: 0;
+      overflow: hidden;
+    }
+    &.active {
+      // http://stackoverflow.com/questions/3508605/css-transition-height-0-to-height-auto
+      max-height: 1000px;
+    }
+  }
+  .home-navigation,
+  .main-navigation {
+    background-color: $color-3;
+    position: relative;
+    li {
+      margin: 0;
+    }
+  }  
+  .spacer {
+    display: block;
+    height: 1px;
+    margin: $small-outer-spacing 0;
+  }
+}
+// .header
+.sujet {
+  display: none;
+}
+// .sujet
+.post-sujet {
+  display: none;
+ .content {
+  padding: 30px 15px 15px 15px;
+  overflow: hidden;
+  }
+  .commit-project{
+    margin: 20px 0 0 0; 
+    display: block;
+  }
+  .info-box{
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    a {
+      padding-left: 55px;
+      padding-right: $small-outer-spacing;
+      position: relative;
+      .foundicon-thumb-up {
+        position: absolute;
+        top: 1px;
+        left: 0;
+      }
+    }
+  }
+ .github-commit-list {
+    @include grid-column( 12 );
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+ }
+ .talk-to-us {
+    @include grid-column( 12 );
+    margin-top: $small-outer-spacing;
+ }
+}
+// .post-sujet
+.main {
+  // display: none;
+  .content {
+    position: relative;
+  }
+  .scene {
+    position: absolute;
+    z-index: 0;
+  }
+  .about-us {
+      margin: 160px 0 0 0;
+      min-height: 230px;
+      padding: 0 $small-outer-spacing 0 $small-outer-spacing;
+  }
+  .contact {
+      margin: 0 0 200px 0;
+      min-height: 230px;
+      padding: 0 $small-outer-spacing 0 $small-outer-spacing;
+  }
+  .large-12 {
+    margin: 30px 0 15px 0;
+  }
+  .large-4 {
+    .panel {
+      background-color: #ffffff;
+      border: none;
+      color: $color-3;
+    }
+  }
+  .about-us-list {
+    @include clearfix();
+    li {
+      margin-top: 80px;
+      a {
+        margin: $small-outer-spacing 0;
+        span{
+          margin: 10px 0 20px 0;
+        }
+      }
+    }
+    .info-box {
+      @include grid-column( 12 );
+      padding: 190px 0 $small-outer-spacing 0;
+      span {
+        display: block;
+      }
+      .link {
+        margin: 20px 0 20px 0;
+      }
+    }
+  }
+  .references-bg {
+    margin: 0;
+    padding: 40px 0 40px 0;
+  }
+  .references {
+    margin: 30px 0 50px 0;
+    h3 {
+      margin: 25px 10% 35px 10%;
+    }
+    .reference-row-1,
+    .reference-row-2
+    .reference-list {
+      list-style-type: none;
+     }
+    .reference-list {
+      li {
+        @include grid-column( 12 );
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .reference-row-1,
+    .reference-row-2 {
+       list-style-type: none;
+    }
+    .reference-row-1 {
+      li {
+        width: 20%;
+        img {
+          @include float-right();
+        }
+      }
+    }
+    .reference-row-2 {
+      li {
+        width: 25%;
+      }
+    }
+  }
+}
+// .main
+.pre-footer {
+  // display: none;
+  padding: 10px 0 0 0;
+  .info-box {
+    @include grid-column( 12 );
+    // margin-top: 30px;
+  }
+  .newsletter {
+    @include grid-column( 12 );
+    margin: -5px 0 0 0;
+    input {
+      width: 100%;
+    }
+  }
+}
+.footer {
+  // display: none;
+  .gmaps-marker-placeholder {
+    h1,h2 {
+      color: $color-5;
+    }
+    @include box-shadow( $color-8 5px 5px 15px );
+    position: relative;
+    width: 90%;
+    padding: $small-outer-spacing;
+    margin: 40px 0 0 $small-outer-spacing;
+    &:before {
+      // creates the larger triangle
+      content:"";
+      position:absolute;
+      bottom:-30px;
+      right:80px;
+      // reduce the damage in FF3.0
+      display:block; 
+      width:0;
+    }
+  }
+}
+// footer
+.post-footer {
+  // display: none;
+  .footer-navigation {
+    list-style-type: none; 
+    @include grid-column( 12 );
+    margin: $small-outer-spacing 0;
+  }
+  .social-navigation {
+    @include inline-list();
+    height: 50px;
+    width: 220px;
+    margin: 5px auto;
+    li {
+      a {
+        height: 50px;
+        width: 50px;
+        &:hover {
+          i{
+            top: 5px;
+            left: 11px;
+          }
+        }
+        i {
+          position: relative;
+          top: 7px;
+          left:13px;
+          z-index: 1;
+        }
+      }
+      &.facebook {
+        position: relative;
+        a {
+           &:hover {
+            i {
+              top: -1px;
+              left: 4px;
+            }
+            .bg {
+              background-color: $color-1;
+            }
+          }
+        }
+        i {
+          left: 5px;
+          top: 0px;
+        }
+        .bg {
+          position: absolute;
+          top: 12px;
+          left: 13px;
+          width: 21px;
+          height: 24px;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  .copyright {
+    @include grid-column( 12 );
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  &.user-authorized, 
+  &.admin-authorized {
+    .copyright {
+      position: relative;
+      padding: 0 15px 0 120px;
+      img {
+        position: absolute; 
+        top: 0;
+        left: 15px;
+      }
+    }
+  }
+}

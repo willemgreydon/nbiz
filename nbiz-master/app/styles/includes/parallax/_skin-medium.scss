@@ -1,0 +1,25 @@
+#parallax-1{
+  @include background( image-url("./../../assets/images/parallax/forge-1.jpg" ) center center );
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  .layer-1{
+    @include background( image-url("./../../assets/images/parallax/forge-2.png" ) center center ); 
+    background-size: 110% 105%;
+  }
+  .layer-2{
+    @include background( image-url("./../../assets/images/parallax/forge-3.png" ) center center ); 
+    background-size: 100% 100%;
+  }
+  .layer-3{
+    @include background( image-url("./../../assets/images/parallax/forge-4.png" ) center center ); 
+    background-size: 100% 100%;
+  }
+  .layer-4{
+    @include background( image-url("./../../assets/images/parallax/forge-5.png" ) center center ); 
+    background-size: 110% 100%;
+  }
+  .layer-5{
+    @include background( image-url("./../../assets/images/parallax/forge-6.jpg" ) center center ); 
+    background-size: 100% 100%;
+  }
+}

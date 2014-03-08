@@ -1,0 +1,22 @@
+script.
+  ; console.log( "Added data for user-group: default" )    
+  //- Inject all public application-data.
+  //- CAUTION: This is essential for security reasons!
+  //- !!! Double check that only public application-data 
+  //- is injected!
+  //- CAUTION: !*{} ( !!!don't remove * ) Markers are special Placeholders used
+  //- by jade template-engine to inject server-data into
+  //- the javascript block on template-rendering
+  ; window.data = {}
+  ; window.data.route = {}
+  ; window.data.route.state = {}
+  ; window.data.route.state = !{ JSON.stringify( data.route ) }
+  ; window.data.navigation = {}
+  ; window.data.navigation.state = {}
+  ; window.data.navigation.state = !{ JSON.stringify( data.navigation ) }
+  ; window.data.common = !{ JSON.stringify( data.common ) }
+  ; window.data.environment = !{ JSON.stringify( data.environment ) }
+  ; window.data.path = !{ JSON.stringify( data.path.client ) }
+  //- Import user-object
+  //- CAUTION: This is essential for login-functionality of the application
+  ; window.user = !{ JSON.stringify( user ) }

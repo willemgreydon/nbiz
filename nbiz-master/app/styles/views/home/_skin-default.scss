@@ -1,0 +1,243 @@
+.orbit-container {
+  background-color: transparent;
+}
+// orbit-container
+.alerts {
+  background-color: $color-3;
+  .alert-box {
+    border-color: none;
+    background-color: $color-10;
+    padding: 20px;
+  }
+}
+//- alerts
+.button {
+  border: solid 2px transparent;
+  &:hover {
+    background-color: $color-9;
+  }
+  &.active,
+  &:active {
+    background-color: $color-10;
+  }
+}
+//- button
+.header {
+  background-color: $color-3;
+  // home-navigation
+  .main-navigation {
+    @include transition-property( max-height );
+    @include transition-duration( 0.8s );
+    .navigation-item { 
+      @include transition-property( background-color );
+      @include transition-duration( 0.5s );
+      border: solid 2px transparent; 
+      &:hover {
+        background-color: $color-5;
+        border: solid 2px transparent; 
+      }
+      &.active,
+      &:active {
+        background-color: transparent;
+        border: solid 2px $color-10;
+      }
+    }
+  }
+  .spacer {
+    border-bottom: 1px solid $color-8;
+  }
+  // .main-navigation-toggle {
+  //   a {
+  //     border: solid 2px $color-1; 
+  //     color: $color-1;
+  //   }
+  // }
+}
+// header
+.sujet {
+  @include background( image-url("./../../assets/images/slide_1.jpg" ) no-repeat );
+  background-color: $color-4;
+  .slide {
+    h5 span{
+      color: $color-1;
+    }
+    &.technology {
+      @include background( image-url("./../../assets/images/slide_1.jpg" ) no-repeat );
+    }
+    &.company-philosopy {
+      @include background( image-url("./../../assets/images/slide_2.jpg" ) no-repeat );
+       
+    }
+  }
+}
+// sujet
+.post-sujet {
+  background-color: $color-4;
+}
+// post-sujet
+.main {
+  background-color: #ffffff;
+  .references-bg {
+    background-color: $color-7;
+  }
+  .about-us {
+    p, h1, h2, h3, h4, h5, h6 {
+      color: #282828;
+    }
+  }
+  .about-us-list {
+    list-style-type: none;
+    li {
+      .info-box {
+        @include transition-property(background-image);
+        @include transition-duration(0.8s);
+        @include transition-timing-function(ease-in);
+      }
+      &.services {
+        .info-box {
+          @include background( image-url("./../../assets/images/highlight_1.png" ) no-repeat center 10px );
+          &:hover {
+            @include background( image-url("./../../assets/images/highlight_1-hover.png" ) no-repeat center 10px );
+          }
+        }
+      }
+      &.philosophy {
+        .info-box {
+          @include background( image-url("./../../assets/images/highlight_2.png" ) no-repeat center 20px );
+          &:hover {
+            @include background( image-url("./../../assets/images/highlight_2-hover.png" ) no-repeat center 20px );
+
+          }
+        }
+      }
+      &.products {
+        .info-box {
+          @include background( image-url("./../../assets/images/highlight_3.png" ) no-repeat center 20px );
+          &:hover {
+            @include background( image-url("./../../assets/images/highlight_3-hover.png" ) no-repeat center 20px );
+          }
+        }
+      }
+      &.tools {
+        .info-box {
+          @include background( image-url("./../../assets/images/highlight_4.png" ) no-repeat center 20px );
+          &:hover {
+            @include background( image-url("./../../assets/images/highlight_4-hover.png" ) no-repeat center 20px );
+          }
+        }
+      }
+    }
+  }
+}
+// main
+.pre-footer {
+  background-color: $color-4;
+  .newsletter {
+    label {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+// pre-footer
+.footer {
+  height: $footer-height;
+  background-color: $color-3;
+  @include background( image-url("./../../assets/images/map_1920.jpg") );
+  .gmaps-marker-placeholder {
+    h1, h2 {
+      color: $color-5;
+    }
+    @include box-shadow( $color-8 5px 5px 5px );
+    background-color: $color-1;
+    &:before {
+      // creates the larger triangle
+      content:"";
+      position:absolute;
+      bottom:-30px;
+      right:80px;
+      border-width:0 0 30px 50px;
+      border-style:solid;
+      border-color:transparent $color-1;
+      // reduce the damage in FF3.0
+      display:block; 
+      width:0;
+    }
+  }
+}
+// footer
+.post-footer {
+  background-color: $color-6;
+  .content {
+    color: $color-8;
+  }
+  li {
+    a {
+      color: $color-8;
+      &:hover{
+        color: $color-1;
+      }
+      &:active,
+      .active {
+        color: $color-10;
+      }
+      &.forge-tech {
+        font-size: emCalc( 18px );
+      }
+    }
+  }
+  .social-navigation {
+    i {
+    font-size: emCalc( 24px );
+      @include hide-text();
+    } 
+    li a {
+      color: $color-6;
+      background-color: $color-8;
+      @include border-radius( 9999px, 9999px );
+      &:hover {
+        border: solid 2px $color-1;
+        background-color: $color-6;
+        color: $color-1;
+      }
+      &:active,
+      .active {
+        border: solid 2px $color-10;
+        background-color: $color-6;
+        color: $color-10;
+      }
+    }
+    .facebook {
+      a {
+        &:hover{
+          i {
+            color: $color-6;
+          }
+        }
+        &.active,
+        &:active,
+        &.active:hover,
+        &:active:hover {
+          i {
+            color: $color-6;
+          }
+          .bg {
+            background-color: $color-10;
+          }
+        }
+      }
+      i {
+        color: $color-8;
+        font-size: emCalc( 30px );
+      }
+      .bg {
+        background-color: $color-6;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    display: block;
+    font-size: emCalc( 14px ); 
+  }
+}
+// post-footer

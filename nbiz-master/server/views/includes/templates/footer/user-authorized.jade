@@ -1,0 +1,24 @@
+section.pre-footer.user-authorized
+  .content
+    .info-box
+      h1
+        | Welcome to nisslmueller.biz, {{ window.user }}
+      h2
+        | User-Authorization granted!
+      h3
+        a(href='http://')
+          | Read last month edition
+          span.icon-arrow-right
+    form.newsletter
+      label(for='email')
+        | Send newsletter to:
+      input.email(name='email', type='text')
+      input.submit.button(type='submit', value='Request Newsletter') 
+section.footer.user-authorized
+  .content
+section.post-footer.user-authorized
+  .content
+    include ./../../../../../app/views/includes/navigation/footer/default
+    include ./../../../../../app/views/includes/navigation/social/default
+    .copyright
+      include ./../../../../../app/views/includes/license/default

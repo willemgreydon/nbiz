@@ -1,0 +1,18 @@
+.alert-box.no-js( data-alert )
+  a.close
+    | &times;
+  p
+    strong Please activate Javascript! 
+    | Javascript is disabled in your browser! Please activate it for optimal
+    | experience! Otherwise many enjoyable features will not be available. Read 
+    a( href="http://enable-javascript.com/", target="_blank" ) 'How to enable JavaScript in your browser'
+    | for help!
+// if lt IE 7
+  .alert-box.lt-ie7( data-alert )
+    a.close
+      | &times;
+    p 
+      strong You are using an outdated browser.
+      a( href="http://browsehappy.com/", target="_blank"  )
+        | Please upgrade your browser 
+      | &nbsp;to improve your experience.

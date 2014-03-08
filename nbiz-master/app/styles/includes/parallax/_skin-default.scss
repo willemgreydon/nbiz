@@ -1,0 +1,9 @@
+#parallax-1 {
+  list-style-type: none;
+  // @include background( image-url("./../../assets/images/parallax/forge-1.jpg" ) center center );
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  .layer{
+    background-repeat: no-repeat; 
+  }
+}

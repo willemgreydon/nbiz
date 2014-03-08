@@ -1,0 +1,64 @@
+{
+  "todos": [
+    { 
+      "name": "Foundation",
+      "status": "Done"
+      , "created": "7/3/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "Added Foundation-Templates Angular-Project-Setup"
+      , "status": "Done"
+      , "created": "7/3/2013"
+      , "updated": "7/21/2013"
+    }
+    , {
+      "name": "Basic Concept-Page Setup"
+      , "status": "Done"
+      , "created": "7/7/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "First Draft"
+      , "status": "Done"
+      , "created": "7/14/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "AngularJs Setup"
+      , "status": "Done"
+      , "created": "7/14/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "AngularJs Concept-Page Prototyp"
+      , "status": "Done"
+      , "created": "7/14/2013"
+      , "updated": "7/21/2013"
+    }
+    , {
+      "name": "RequireJS Setup"
+      , "status": "Open"
+      , "created": "7/14/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "ExpressJS Setup"
+      , "status": "In Progress"
+      , "created": "7/14/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "MongoDB/Moongoose"
+      , "status": "In Progress"
+      , "created": "7/14/2013"
+      , "updated": "7/20/2013"
+    }
+    , {
+      "name": "Redis"
+      , "status": "Open"
+      , "created": "7/14/2013"
+      , "updated": "7/20/2013"
+    }
+  ]
+}

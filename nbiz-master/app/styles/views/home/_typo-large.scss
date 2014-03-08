@@ -1,0 +1,75 @@
+	.header {
+		.navigation-item {
+			line-height: 25px;
+			color: $color-1;
+		}
+	}
+	// header
+	
+	.post-sujet {
+		.commit-project{
+        	font-size: emCalc( 16px );
+      	}
+		.commit-info{	
+			span, .github-link {
+				font-size: emCalc( 12px );
+			}
+			h1 {
+				font-size: emCalc( 16px );
+				display: inline;
+				line-height: 20px;
+			}
+		}
+	}
+
+	//post-sujet
+
+	.main {
+		.about-us {
+			h1 {
+				font-size: emCalc( 48px );
+				line-height: 51px;
+				a {
+					text-decoration: underline;
+				}
+			}
+			h2 {
+				font-size: emCalc( 24px );
+				a {
+					text-decoration: underline;
+				}
+			}
+			.about-us-list li a span {
+		        font-size: emCalc( 18px );
+		        line-height: emCalc( 25px );
+		    }
+		}
+	}
+	// main
+.pre-footer{
+  a {
+    color: $color-1;
+    &:hover {
+      color: $color-9;
+    }
+    &.active,
+    &:active {
+      color: $color-10;
+    }
+  }
+  h1 {
+    font-size: emCalc( 20px );
+    line-height: emCalc( 20px );
+  }
+  h3 {
+    font-size: emCalc( 16px );
+    a{
+      line-height: 40px;
+    }
+  }
+  label {
+    color: $color-1;
+      font-size: emCalc( 16px );
+  }
+}
+// pre-footer

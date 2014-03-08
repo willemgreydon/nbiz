@@ -1,0 +1,9 @@
+li.level-1( data-ng-repeat="navigationItemLevel1 in navigationItem.subNavigation"
+, data-ng-switch="navigationItemLevel1.subNavigation"
+, class="{{ navigationItemLevel1.classes}}" )
+  a( class="navigation-item"
+  , data-ng-bind-html-unsafe="navigationItem.content" 
+  , href="{{ navigationItem.path }}" )
+  span( ng-switch="navigationItem.subnavigation" )
+    ul( ng-switch-default="true" )
+      include main-navigation-level-2

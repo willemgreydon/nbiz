@@ -1,0 +1,349 @@
+  {
+      "id": 0
+      , "name": "Project Setup"
+      , "contents": [
+        {
+          "large": 12
+          , "small": 12
+          , "push": 0
+          , "elements": [
+            {
+              "classes": ""
+              , "name": "p"
+              , "content": "hello angularJs"
+            }
+          ]
+          , "columns": [
+            {
+              "large": 6
+              , "small": 12
+              , "push": 0
+              , "elements": [
+                {
+
+                  "classes": ""
+                  , "content": "<h1>Forge-Concept</h1>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+                , {
+
+                  "classes": "subheader"
+                  , "content": "<h2 class=\"subheader\">Website for developing the concept of forge - web-dev tool. Also serves as \"Proof of Concept\" for basic forge website-setup.</h2>"
+                }
+                , {
+
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<h3>About ForgeTech:</h3>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<p>ForgeTech is a company of friends. Our mission is to build websites/web-applications on the latest and greatest of web-technology.</p>"
+                }
+                , {
+                  "classes": ""
+                  , "content": " <p>We belief that a quality development workflow/process must be the base to build upon and that testing documentation are key-parts of any project.</p>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<h3>Frontend-Setup:</h3>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<ul><li><span><p><a href=\"http://www.angularjs.org/\"> AngularJs </a> is used for controlling the client-side page/data-model.</p> </span> </li> <li> <span><p><a href=\"http://zeptojs.com/\"> ZeptoJs </a> is used for client-side DOM manipultaion.</p> </span> </li> <li> <span> <p><a href=\"http://foundation.zurb.com/\"> Foundation </a> is used as Frontend-Framework. It's used to build both forge-ui and created pages. </p> </span> </li> <li> <span> <p><a href=\"http://gridster.net/\"> Gridstar </a> is used for building and previewing created pages/layouts. </p> </span> </li> <li><span> <p><a href=\"http://requirejs.org/\"> RequireJs </a> is used for importing and managing client-side javascript dependencies. </p> </span> </li></ul>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<h3>Backend-Setup:</h3>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<ul> <li><span> <p><a href=\"http://nodejs.org/\"> NodeJs </a> is used as server runtime and networking library on server-clients. </p> </span> </li> <li> <span><p><a href=\"http://expressjs.com/\"> ExpressJs </a> is used as server-development-framework for creating the forge server-side component. </p></span> </li> <li> <span> <p><a href=\"http://www.mongodb.org/\"> MongoDB </a> is used as the primary database for forge. </p> </span> </li> </ul>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+              ]
+            }
+            , {
+              "large": 6
+              , "small": 12
+              , "push": 0
+              , "elements": [
+                {
+                  "classes": "image-content"
+                  , "content": "<img src=\"./assets/images/forge/logo.png\" alt=\"ForgeTech - Logo\"><p>ForgeTech - Wir schmieden Technologie solange sie heiss ist</p>"
+                }
+                , {
+                 "classes": ""
+                  , "content": "<h3>Tooling-setup:</h3>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<ul><li><span><p><a href=\"http://git-scm.com/\">Git</a> is used for managment and versioning of forge code-base.</p></span></li><li><span><p><a href=\"http://github.com/\">Github</a> is used as remote-repository storage for team-management as communication-tool for task-management and bug-tracking.</p></span></li><li><span><p><a href=\"http://nodejs.org/\">NodeJs</a> is also used as development-runtime on developer-clients.</p></span></li><li><span><p><a href=\"http://gruntjs.com/\">Grunt</a> is used as tool to provide automatisation for the development-environment. Also its used as build and deployment-tool.</p></span></li><li><span><p><a href=\"http://visionmedia.github.io/mocha/\">Mocha</a> is used as javascript unit-testing-framework.</p></span></li><li><span><p><a href=\"http://bower.io/\">Bower</a> is used for the management of client-side javascript-dependencies.</p></span></li><li><span><p><a href=\"http://pivotal.github.io/jasmine/\">Jasmine</a> is used as test-runner for performing browser-scenario tests.</p></span></li><li><span><p><a href=\"http://yeoman.io/\">Yeoman</a> is used to provide code-generator functionality in development enviroment.</p></span><ul><li><span><p><a href=\"https://github.com/yeoman/generator-angular\">Generator-Angular</a> provides code-generators for AngularJs</p></span></li><li><span><p><a href=\"https://github.com/bauschan/generator-zurb-foundation\">Generator-Zurb-Foundation</a> provides code-generator for a basic-foundation-project.</p></span></li><li><span><p><a href=\"https://github.com/yeoman/generator-mocha\">Generator-Mocha</a> provides code-generator for mocha unit-testing framework.</p></span></li><li><span><p><a href=\"https://github.com/petecoop/generator-express\">Generator-Express</a> provides code-generator for expressJs-framework.</p></span></li><li><span><p><a href=\"https://github.com/yeoman/generator-jasmine\">Generator-Jasmine</a> provides code-generator for jasmine scenario-testing-framework.</p></span></li></ul></li></ul>"
+                }
+                , {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "id": 1
+      , "name": "Forge Step-Concept"
+      , "todos": [
+        {
+          "id": 8
+          , "name": "Vision"
+          , "status": "Done"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 9
+          , "name": "First Draft"
+          , "status": "Done"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 10
+          , "name": "Define Shortcut-Navigation"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+      , "contents": [
+        {
+          "large": 12
+          , "small": 12
+          , "push": 0
+          , "elements": [
+            {              
+              "classes": ""
+              , "content": "hello angularJs"
+            }
+          ]
+          , "columns": [
+            {
+              "large": 6
+              , "small": 12
+              , "push": 0
+              , "elements": [ 
+                {
+                  "classes": ""
+                  , "content": "<h2 class=\"subheader\">Forge provides all tools to fully support its five development steps for creating the basic foundation for a modern Website.</h2>"
+                }
+                {
+                  "classes" : ""
+                  , "content": "<hr>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<p>Forge will be created around the concept of five development steps <b>( 5Sts )</b> This <b>5Sts</b> will be supported by a set of tools specificly created to get the appearing tasks done with ease. The <b>5Sts</b> are also designed to force a clean development-practice on the <b>users</b> but also allow them to choose how to export and alter the project by there needs. More so it is the goal of forge and its <b>5Sts</b> development process to support later extensions of the the foundation created by it. Also it must be true that the concepts of opject-oriented programming <b>( Oop )</b> and other well known programming best-practices are respected and if possible supported but at least tolerated. Goal is to allow and provide a degree of reuse of developed-source as high as possible while still allowing the <b>user</b> to make its own choices.</p>"
+                }
+                {
+                  "classes" : ""
+                  , "content": "<hr>"
+                }
+                {
+                  "classes" : ""
+                  , "content": "<h3>Forge Development-Steps</h3>"
+                }
+                {
+                  "classes" : ""
+                  , "content": "<ul> <li> <span> <h4><a href=\"#f2\">Feature 2 - Page Structure</a> </h4> </span></span> </li> <li> <span> <h4><a href=\"#f3\">Feature 3 - Layout</a> </h4> </span></li> <li> <span> <h4><a href=\"#f4\">Feature 4 - Components</a> </h4> </span></li> <li> <span> <h4><a href=\"#f5\">Feature 5 - Skinning</a> </h4> </span> </li><li> <span> <h4><a href=\"#f6\">Feature 6 - Export</a> </h4> </span> </li> </ul>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+                {
+                  "classes" : ""
+                  , "content": "<h3>Common Concepts</h3>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<ul> <li> <span> <h4> Div vs Span container </h4> <p>As div and span containers are very similar in there properties and use in modern web-development forge wants to use and introduce an convention expanding the semantics of div- and span-elements within the context of its applications this should extend the functionality of the elements clearify there use and enhance the readabilty of the produced html-code.</p> <div data-alert class=\"alert-box\"> <span> <p>Forge uses <b>Divs</b> and <b>Spans</b> for the following purposes: <ul> <li> <span> <h5>Divs:</h5> <p>are used to mark <b>Layout</b>- ( like Containers for Header Footer Sidebar Content ... ) and <b>Component</b>- ( like Containers for navigations alert-boxes ... )</p> </span> </li> <li> <span> <h5>Spans:</h5> <p>are used to mark <b>Content</b> ( like usuall text to be contained within a component ) and <b>Sections of Content</b> ( like group of contents belonging together like first-name last-name belonging to user-information content the contents grouped together in a li-element or a component ). </p> </span> </li></ul> </p> </span> </div> </span> </li> <li> <span> <h4> Oop and Modularisation </h4> <p>Forge tries to incoporate best-practices from Oop as far as they can be applied to it's features and the output it produces.</p> <p> Forge tries to achieve a high degree of reusability by providing tools that allow a clean abstraction between the code produced during its <b>5Sts</b> development process and the reuse of this code during the construction of further reusable modules or <b>components</b>. </p> </span> </li> </ul>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+              ]
+            }
+            {
+              "large": 6
+              , "small": 12
+              , "push": 0
+              , "elements": [
+                {
+                  "classes": "image-content"
+                  , "content": "<img src=\"./asset/image/forge/5Sts_v1.jpg\" alt=\"Forge five steps development process - introduction screen-features screenshot\"><p>Forge five steps development process - introduction screen-feature screenshot</p>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<hr>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<h3>Tools</h3>"
+                }
+                {
+                  "classes": ""
+                  , "content": "<ul> <li> <span> <h4>Forge 5Sts-tool</h4> <p>This Tools meant to allow the <b>user</b> to freely navigate between the 5 steps of the development process.</p> <h5>Features:</h5> <ul> <li> <span> <h6>Basic Navigation-Feature</h6> <p>The navigation allows to <b>switch</b> between the forge development steps. If a switching is not possible because <b>changes aren\'t saved</b> or needed <b>presets</b> for desired step <b>aren\'t meet</b> a <b>warning</b> is shown <b>leading</b> the user to instrunctions on how to proceed.</p> </span> </li> <li> <span> <h6>Introduction Screens-Feature</h6> <p>On forge launch a Introduction screen version of the <b>5Sts</b> will be presented. This version of the <b>5Sts</b> allows the <b>free navigation</b> throw the development-process of a demo project. It offers information on how to use the <b>5Sts</b> and the Tools provided during this steps. It includes the possebility to activate an <b>extended mode</b> also provides basic understanding on where to find the code producedhow it works together and how to handle it after export. Introduction Screen-Feature can be <b>activated</b> <b>closed</b> and <b>disabled</b> at any time</p>. </span> </li> <li> <span> <h6>Switching Shortcuts-Feature</h6> <p>The feature includes different concepts for switching between the 5Sts using <b>shortcuts (like crtl+1)</b> gestures or similar ( <span class=\"open\">DOTO</span>)</p> </span> </li> <li> <span> <h6></h6> <p></p> </span> </li> <li> <span> <h6></h6> <p></p> </span> </li> </ul> </span> </li> </ul>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "id": 2
+      , "name": "Page Structure"
+      , "todos": [
+        {
+          "id": 11
+          , "name": "Define Pages"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 12
+          , "name": "Define Structure"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+    , {
+      "id": 3
+      , "name": "Layout"
+      , "todos": [
+        {
+          "id": 13
+          , "name": "Define Grid-Layout"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 14
+          , "name": "Define Subgrids"
+          , "status": "Done"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 15
+          , "name": "Define Layout-Components"
+          , "status": "Done"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+    , {
+      "id": 4
+      , "name": "Layers"
+      , "todos": [
+        {
+          "id": 16
+          , "name": "Define Layout-Concept"
+          , "status": "Done"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+    , {
+      "id": 5
+      , "name": "Components"
+      , "todos": [
+        {
+          "id": 17
+          , "name": "Define Component-Building"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+    , {
+      "id": 6
+      , "name": "Skinning"
+      , "todos": [
+        {
+          "id": 18
+          , "name": "Define Common-Layout-Sinning"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 19
+          , "name": "Define Component-Skinning"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+    , {
+      "id": 7
+      , "name": "States"
+      , "todos": [
+        {
+          "id": 20
+          , "name": "Define Layout-States"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+        {
+          "id": 21
+          , "name": "Define Layout-States"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+    , {
+      "id": 8
+      , "name": "Export"
+      , "todos": [
+        {
+          "id": 22
+          , "name": "Define Export-Service"
+          , "status": "Open"
+          , "created": "7/14/2013"
+          , "updated": "7/20/2013"
+        }
+      ]
+    }
+  ]
+]

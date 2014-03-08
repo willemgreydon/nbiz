@@ -1,0 +1,10 @@
+extends ./layouts/default
+
+block content
+  .content
+    include ./../../app/views/404
+      .error-message-box
+          .error-stack-trace
+            p
+              code!= error
+

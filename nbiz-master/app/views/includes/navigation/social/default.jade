@@ -1,0 +1,7 @@
+ul( class="social-navigation" )
+  li.level-0( data-ng-repeat="navigationItem in navigation.state.active.social" 
+  	, class="{{ navigationItem.classes }}")
+    a( data-ng-bind-html-unsafe="navigationItem.content"
+  	, class="navigation-item"
+  	, target="{{ navigationItem.target }}"
+    , href="{{ navigationItem.path }}" )

@@ -1,0 +1,11 @@
+.content {
+	.navigation-item.button,
+	.button {
+		@include text-shadow( $color-2 1px 1px 0 );
+		&.active,
+		&:active {
+			color: $color-5;
+			@include text-shadow( $color-1 1px 1px 0 );
+		}
+	}
+}

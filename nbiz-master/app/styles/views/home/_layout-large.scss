@@ -1,0 +1,197 @@
+@media #{ $medium } {
+  .header {
+    // display: none;
+    height: $header-height;
+    .home-navigation {
+      @include float-left();
+      display: inline-block;
+      li {
+        margin: 0;
+        padding: 0;
+      }
+      .logo {
+        width: 40px;
+        img {
+          top: 12px;
+          left: 0;
+        }
+      }
+      .name {
+      width: 176px;
+      img {
+        height: 20px;
+        position: relative;
+        top:12px;
+        left:10px;
+      }
+    }
+      .mobile-navigation {
+        // @extend .hide-for-large-up;
+        display: none;
+      }
+    }
+    .main-navigation {
+      @include inline-list();
+      @include float-right();
+      margin: 0;
+      padding: 0 5px 0 0;
+      &.inactive, &.active {
+        max-height: none;
+      //  overflow: auto;
+      }
+      li{
+        margin: 0;
+        padding: 0;
+      }
+      .navigation-item {
+        height: $header-height - 20px;
+        margin: 10px 0;
+        &.sign-in {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  // header
+  .sujet {
+    // display: none;
+    height: $sujet-height;
+  }
+  .post-sujet{
+    // display:none;
+    height: $post-sujet-height;
+    .content {
+      position: relative;
+      top: 0;
+      padding: 5px 5px 0 5px;
+    }
+    h1{
+      position: relative;
+      top: 15px;
+    }
+    .info-box{
+      left: 240px;
+      top: -11px;
+    }
+    .commit-project{
+      display: inline;
+    }
+    .github-commit-list{
+      @include grid-column( 10 );
+      padding-left: 0;
+    }
+    .talk-to-us {
+      @include grid-column( 2, false, false, 0 );
+    }
+  }
+  // post-sujet
+  .main {
+    .about-us {
+      margin: 150px 0 60px 0;
+    }
+    .contact {
+      margin: 0 0 200px 0;
+      .willemgreydon {
+        position: relative;
+        margin-left: -230px;
+        left: 50%;
+        width: 100%;
+      }
+    }
+    .about-us-list {
+      margin: 0;
+      .odd .info-box {
+        margin-right: 0;
+      }
+      .info-box {
+        @include grid-column( 3 );
+        width: 24%;
+        height: 300px;
+        padding-left: emCalc( 10px );
+        padding-right: emCalc( 10px );
+        margin-left: 1%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .pre-footer {
+    // display: none;
+    padding: 20px;
+    height: 200px;
+    .info-box {
+      @include grid-column( 8 );
+      padding-top: 15px;
+    }
+    .newsletter {
+      @include grid-column( 4 );
+      padding-top: 15px;
+    }
+  }
+  // pre-footer
+  .footer {
+    // display: none;
+    height: $footer-height;
+    .gmaps-marker-placeholder {
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+     } 
+   }
+  // footer
+  .post-footer {
+    // display: none;
+    height: $post-footer-height;
+    .content{
+      position: relative;
+      padding: 0 5px;
+    }
+    .footer-navigation {
+      @include inline-list();
+      margin-top: 15px;
+      li {
+        margin-top: 5px;
+        a {
+          padding: 2px 0 0 0;
+          &.forge-tech {
+            padding: 0;
+          }
+        }
+      }
+    }
+    .social-navigation{
+      position: absolute;
+      top: 22px;
+      right: 5px;
+    }
+    .copyright{
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      // position: absolute;
+      // top: 30px;
+      // left: 0;
+    }
+    &.user-authorized, 
+    &.admin-authorized {
+      .copyright {
+        width: 80%;
+        margin: -10px 0 0 0;
+        img {
+          left: 0;
+        }
+      }
+    }
+    // user-authorized, admin-authorized
+  }
+  // post-footer
+  .js{
+    #main-navigation-1{
+      &.offscreen{
+        height: auto;
+        &.active{
+          position: static;
+        }
+      }
+    }
+  }
+}

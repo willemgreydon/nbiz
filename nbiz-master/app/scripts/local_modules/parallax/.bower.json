@@ -1,0 +1,13 @@
+{
+  "name": "parallax",
+  "homepage": "https://github.com/wagerfield/parallax",
+  "_release": "master",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "439e370141e8ba23c8180782faedb3df1f72a9d8"
+  },
+  "_source": "git://github.com/wagerfield/parallax.git",
+  "_target": "*",
+  "_originalSource": "parallax"
+}

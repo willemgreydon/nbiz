@@ -1,0 +1,115 @@
+//- Inject default-data application-data
+include ./scripts/injects/default
+
+//- Checks the server user-object for authorization-state to
+//- inject the additional data according to this state
+if user && user.groups && user.groups.length > 0
+  each group in user.groups
+    case group 
+      when "user-authorized"
+        //- Inject additional application-data for user-group
+        //- "user-authorized"
+        //- CAUTION: This is essential for security reasons!
+        //- !!! Double check that only application-data for 
+        //- user-group user-authorized is injected
+        include ./scripts/injects/user-authorized
+      when "admin-authorized"
+        //- Inject additional application-data for user-group
+        //- "user-authorized"
+        //- CAUTION: This is essential for security reasons!
+        //- !!! Double check that only application-data for
+        //- user-group user-authorized is injected
+        include ./scripts/injects/admin-authorized
+
+script.
+  console.log("Added default javascript imports!")
+//- CAUTION the comment <!-- build:js ./../../scripts/default.js --> below,
+//- and it's according "end-comment" <!-- endbuild --> are needed for
+//- javascript compression by grunt-task on build-time
+<!-- build:js ./../../scripts/default.js -->
+//- Include angular-modules
+include ./scripts/angular
+//- Include jquery-modules for default user-group
+include ./scripts/jquery/default
+//- Include socket.io for real-time application capabilities
+include ./scripts/socketio
+//- Include foundation-javascript
+include ./scripts/foundation
+//- Include other custom javascript not directly related 
+//- to the angular-application
+//- Include signet-script for custom developer-console message.
+include ./scripts/signet
+//- Include yepnope conditional loader for js-pollyfills for older browsers
+include ./scripts/yepnope
+<!-- endbuild -->
+
+//- Checks the server session user-object for authorization-state and
+//- defines additonal imports according to this state
+if user && user.groups && user.groups.length > 0
+  each group in user.groups
+    case group
+      when "user-authorized"
+        script.
+          ; console.log("Additional user-authorized javascript imports!")
+        //- Inject additional javscript for user-group "admin-authorized"
+        //- CAUTION: This is essential for security reasons and page-load-time!
+        //- !!! Double check that only additonal javascript for
+        //- user-group "user-authorized" is injected!
+        //- CAUTION the comment <!-- build:js ./../../scripts/jquery/user-authorized.js --> below,
+        //- and it's according "end-comment" <!-- endbuild --> are needed for
+        //- javascript compression by grunt-task on build-time
+        <!-- build:js ./../../scripts/jquery/user-authorized.js -->
+        include ./scripts/jquery/user-authorized
+        <!-- endbuild -->
+      when "admin-authorized"
+        script.
+          ; console.log("Additional admin-authorized javascript imports!")
+        //- Inject additional javscript for user-group "admin-authorized"
+        //- CAUTION: This is essential for security reasons and page-load-time!
+        //- !!! Double check that only additonal javascript for
+        //- user-group "user-authorized" is injected!
+        //- CAUTION the comment <!-- build:js ./../../scripts/jquery/admin-authorized-imports.js --> below,
+        //- and it's according "end-comment" <!-- endbuild --> are needed for
+        //- javascript compression by grunt-task on build-time
+        <!-- build:js ./../../scripts/jquery/admin-authorized-imports.js -->
+        include ./scripts/jquery/admin-authorized
+        <!-- endbuild -->
+
+//- Checks the server session-user-object for authorization-state and
+//- imports custom angularJs application-configuration according to this
+//- state
+//- CAUTION: This is essential for security reasons and page-load-time!
+if user && user.groups && user.groups.length > 0
+  //- CAUTION: First element of groups is meant to contain highest user-authorization
+  case user.groups[0]
+    when "user-authorized"
+      //- Inject user-authorized-application configuration
+      //- CAUTION the comment <!-- build:js ./../../scripts/app/user-authorized.js --> below,
+      //- and it's according "end-comment" <!-- endbuild --> are needed for
+      //- javascript compression by grunt-task on build-time
+      <!-- build:js ./../../scripts/app/user-authorized.js -->
+      include ./scripts/application/user-authorized
+      <!-- endbuild -->
+    when "admin-authorized"
+      //- Inject admin-authorized-application configuration
+      //- CAUTION the comment <!-- build:js ./../../scripts/app/admin-authorized.js --> below,
+      //- and it's according "end-comment" <!-- endbuild --> are needed for
+      //- javascript compression by grunt-task on build-time
+      <!-- build:js ./../../scripts/app/admin-authorized.js -->
+      include ./scripts/application/admin-authorized
+      <!-- endbuild -->
+    default
+      //- Inject default-application configuration
+      //- CAUTION the comment <!-- build:js ./../../scripts/app/default.js --> below,
+      //- and it's according "end-comment" <!-- endbuild --> are needed for
+      //- javascript compression by grunt-task on build-time
+      <!-- build:js ./../../scripts/app/default.js -->
+      include ./scripts/application/default
+      <!-- endbuild -->
+  
+  script.
+    ; console.log( "Initialized angular-application for user-authorization: " )
+    ; console.log( user.groups[0] )
+
+//- include ./google/analytics
+

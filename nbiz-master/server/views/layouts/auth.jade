@@ -1,0 +1,13 @@
+extends default
+
+block content
+  .content
+    include ./../../../app/views/includes/socialAuthorization/default
+    .info-box
+      if (typeof errors !== 'undefined')
+        .fade.in.alert.alert-block.alert-error
+          a.close(data-dismiss="alert", href="javascript:void(0)") x
+          ul
+            each error in errors
+              li= error.type
+      block auth

@@ -1,0 +1,40 @@
+  .header{
+    .main-navigation{
+      li {
+        .navigation-item {
+          color: $color-1;
+        }
+      }
+    }
+  }
+  .post-sujet {
+    color: $color-7;
+    h1{
+      display: inline;
+      line-height: 28px;
+      font-size: emCalc( 20px );    
+    }   
+    a, span {
+      font-size: emCalc( 16px );
+    }
+    .button , p, ul{
+      margin: 0;
+    }
+  }
+  //post-sujet
+  .main {
+    .about-us {
+      h1 {
+        font-size: emCalc( 48px );
+        line-height: 51px;
+      }
+      h2 {
+        font-size: emCalc( 24px );
+      }
+      .about-us-list li a span {
+        font-size: emCalc( 18px );
+        line-height: emCalc( 20px );
+      }
+    }
+  }
+  // main

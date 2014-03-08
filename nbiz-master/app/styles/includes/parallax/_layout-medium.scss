@@ -1,0 +1,37 @@
+#parallax-1 {
+  margin:  0;
+  height: 0px;
+  overflow: hidden;
+  .layer{
+    display: block;
+  }
+  .layer-1{
+    height: 100%;
+    width: 110%;
+    margin: 0 0 0 -2%;
+  }
+  .layer-2{
+    height: 100%;
+    width: 100%;
+    margin: 3% 0 0 5%;
+  }
+  .layer-3{
+    height: 100%;
+    width: 100%;
+    margin: 3% 0 0 -5%;
+  }
+  .layer-4{
+    height: 150%;
+    width: 110%;
+    margin: -3% 0 0 -5%;
+  }
+  .layer-5{
+    height: 100%;
+    width: 100%;
+  }
+  .layer-6{
+    height: 100%;
+    width: 100%;
+    margin: -5% 0 0 -5%;
+  }
+}

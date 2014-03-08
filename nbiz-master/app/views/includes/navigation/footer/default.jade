@@ -1,0 +1,7 @@
+ul( class="footer-navigation" )
+  li.level-0( 
+  	data-ng-repeat="navigationItem in navigation.state.active.footer" )
+    a( data-ng-bind-html-unsafe="navigationItem.content"
+  	, class="navigation-item {{ navigationItem.classes }}" 
+  	, target="{{ navigationItem.target }}" 
+    , href="{{ navigationItem.path }}" )
